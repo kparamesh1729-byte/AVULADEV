@@ -1,0 +1,11 @@
+def is_anagram(str1, str2):
+    # Normalize (lowercase + remove spaces)
+    s1 = str1.replace(" ", "").lower()
+    s2 = str2.replace(" ", "").lower()
+    
+    # Compare sorted characters
+    return sorted(s1) == sorted(s2)
+
+# Test
+print(is_anagram("listen", "silent"))  # True
+print(is_anagram("hello", "world"))    # Falseg
